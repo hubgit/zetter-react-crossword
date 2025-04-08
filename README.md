@@ -30,6 +30,8 @@ This is a React crossword component extracted from the [Guardian Frontend applic
 + Smart clearing that only clears cells not part of other completed answers
 + Checking and revealing answers (if provided)
 + Anagram helper
++ Written in TypeScript
++ Uses modern React practices with functional components and hooks
 
 ## API
 

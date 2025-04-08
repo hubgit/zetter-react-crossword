@@ -1,84 +1,25 @@
 {
-  "name": "react-crossword",
-  "version": "0.2.0",
-  "author": "Chris Zetter",
+  "name": "@aeaton/react-crossword",
+  "version": "0.3.0",
+  "author": "Alf Eaton",
   "private": false,
   "dependencies": {
-    "bean": "~1.0.14",
-    "bonzo": "~2.0.0",
-    "fastdom": "0.8.5",
-    "lodash": "^4.17.11",
-    "qwery": "3.4.2",
-    "svg-inline-loader": "^0.8.0",
-    "wolfy87-eventemitter": "~5.2.4"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.0.0",
-    "@babel/core": "^7.0.0",
-    "@babel/plugin-proposal-class-properties": "^7.0.0",
-    "@babel/plugin-proposal-function-bind": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
-    "@babel/preset-react": "^7.0.0",
-    "@babel/register": "^7.0.0",
-    "babel-loader": "^8.1.0",
-    "chance": "1.0.11",
-    "css-loader": "3.6.0",
-    "eslint": "^5.9.0",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-import-resolver-webpack": "^0.10.1",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jsx-a11y": "^6.1.1",
-    "eslint-plugin-react": "^7.11.0",
-    "jest": "^24.9.0",
-    "jest-environment-jsdom": "^24.9.0",
-    "jest-environment-jsdom-global": "^1.1.0",
-    "node-sass": "^4.13.1",
-    "prettier": "1.13.4",
-    "react": ">=16.4.1",
-    "react-dom": ">=16.4.1",
-    "sass-loader": "^7.1.0",
-    "sass-mq": "~3.3.2",
-    "style-loader": "^0.23.1",
-    "svg-inline-loader": "^0.8.0",
-    "terser-webpack-plugin": "^4.2.0",
-    "webpack": "^4.44.1",
-    "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.10"
+    "bonzo": "^2.0.0",
+    "fastdom": "^1.0.12",
+    "lodash": "^4.17.21",
+    "qwery": "^4.0.0"
   },
   "peerDependencies": {
-    "react": ">=16.4.1",
-    "react-dom": ">=16.4.1"
-  },
-  "optionalDependencies": {
-    "fsevents": "^1.1.2"
-  },
-  "jest": {
-    "roots": [
-      "<rootDir>/src/javascripts"
-    ],
-    "moduleDirectories": [
-      "<rootDir>/src/javascripts",
-      "node_modules"
-    ],
-    "moduleNameMapper": {
-      "^(.*)\\.svg$": "<rootDir>/__mocks__/svgMock.js"
-    },
-    "testEnvironment": "jest-environment-jsdom-global"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zetter/react-crossword.git"
+    "url": "https://github.com/aeaton-overleaf/react-crossword.git"
   },
-  "homepage": "https://github.com/zetter/react-crossword",
-  "scripts": {
-    "eslint-fix": "eslint --color --fix src/javascripts examples *.js",
-    "eslint": "eslint --color src/javascripts examples *.js",
-    "test": "yarn eslint && yarn jest",
-    "examples": "yarn run webpack-dev-server --host 0.0.0.0 --config webpack.config.examples.js",
-    "build": "yarn run webpack --config webpack.config.js"
-  },
+  "homepage": "https://github.com/aeaton-overleaf/react-crossword",
   "files": [
     "lib"
   ],
-  "main": "lib/index.js"
+  "main": "src/javascripts/crosswords/crossword.js"
 }
